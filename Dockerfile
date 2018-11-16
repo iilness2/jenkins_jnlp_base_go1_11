@@ -1,4 +1,4 @@
-FROM jenkins/jnlp-slave:3.23-1
+FROM cloudbees/java-build-tools:2.3.0
 MAINTAINER Andre Aliaman
 
 ADD go /usr/local
