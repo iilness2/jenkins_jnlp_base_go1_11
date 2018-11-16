@@ -1,4 +1,6 @@
-FROM cloudbees/jnlp-slave-with-java-build-tools
+#FROM cloudbees/jnlp-slave-with-java-build-tools
+
+FROM sagar23192/jenkins_slave_jnlp:v10
 MAINTAINER Andre Aliaman
 
 ADD go /usr/local
