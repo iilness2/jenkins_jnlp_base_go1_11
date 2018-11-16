@@ -4,6 +4,6 @@ MAINTAINER Andre Aliaman
 ADD go /usr/local
 
 #setup go environment
-RUN export GOROOT=/usr/local/go
-RUN export GOPATH=/var/lib/jenkins
-RUN export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+#RUN export GOROOT=/usr/local/go
+#RUN export GOPATH=/var/lib/jenkins
+#RUN export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
