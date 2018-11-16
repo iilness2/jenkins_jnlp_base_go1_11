@@ -1,7 +1,7 @@
 FROM cloudbees/jnlp-slave-with-java-build-tools
 MAINTAINER Andre Aliaman
 
-RUN mv go /usr/local
+ADD go /usr/local
 
 #setup go environment
 RUN export GOROOT=/usr/local/go
