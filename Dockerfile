@@ -1,8 +1,8 @@
 FROM iilness/jenkins_jnlp_base_go1_11:v1
 MAINTAINER Andre Aliaman
 
-COPY --from=iilness/project-as-a-based:latest /usr/bin /usr/bin
-COPY --from=iilness/project-as-a-based:latest ~/.local ~/.local
+COPY --from=iilness/project-as-a-based:latest /usr/bin /var/lib/jenkins/bin
+COPY --from=iilness/project-as-a-based:latest ~/.local /var/lib/jenkins/.local
 ADD go /usr/local
 
-RUN aws version && python version
+RUN /var/lib/jenkins/bin/aws version && /var/lib/jenkins/bin/python --version
