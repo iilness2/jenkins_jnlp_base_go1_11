@@ -3,3 +3,5 @@ MAINTAINER Andre Aliaman
 
 COPY --from=iilness/project-as-a-based:latest /usr/bin /var/lib/jenkins/bin
 ADD go /usr/local
+COPY install_node.sh /
+RUN /install_node.sh
