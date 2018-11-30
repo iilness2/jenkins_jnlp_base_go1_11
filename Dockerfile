@@ -35,7 +35,6 @@ COPY --from=iilness/project-as-a-based:latest /usr/bin /var/lib/jenkins/bin
 ADD go /usr/local
 RUN mkdir -p /var/lib/jenkins/node
 COPY --from=builder /root/nvm /var/lib/jenkins/node
-RUN ls /var/lib/jenkins/node
 ENV NVM_DIR /var/lib/jenkins/node
 ENV NODE_VERSION 10.14.0
 ENV NODE_PATH $NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules
